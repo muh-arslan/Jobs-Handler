@@ -185,7 +185,7 @@ const JobDetailPage = () => {
                         disabled={updating}
                         onChange={(e) => updateField('status', e.target.value)}
                     >
-                        {["Pending", "Interviewed", "Offered", "Rejected by Company", "Rejected by Me"].map(s => (
+                        {["Applied", "Pending", "Got Response", "Interviewed", "Offered", "Rejected by Company", "Rejected by Me", "Never heard back"].map(s => (
                             <option key={s} value={s}>{s}</option>
                         ))}
                     </select>

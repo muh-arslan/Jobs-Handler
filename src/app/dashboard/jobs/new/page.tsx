@@ -45,7 +45,7 @@ export default function NewJobPage() {
         salaryOffered: "",
         salaryExpected: "",
         currency: "",
-        status: "Pending",
+        status: "Applied",
         coverLetter: "",
         additionalInfo: "",
         isSalartPerAnnum: true,
@@ -54,7 +54,7 @@ export default function NewJobPage() {
 
     const locationType = ['Remote', 'Onsite', 'Hybrid'];
     const jobTypes = ['Contract', 'Freelance', 'Part-time', 'Full-time'];
-    const applicationStatus = ['Pending', 'Interviewed', 'Offered', 'Rejected by Company', 'Rejected by Me'];
+    const applicationStatus = ["Applied", "Pending", "Got Response", "Interviewed", "Offered", "Rejected by Company", "Rejected by Me", "Never heard back"];
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
     ) => {

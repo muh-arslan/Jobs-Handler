@@ -154,7 +154,7 @@ export default function JobsDashboard() {
                 </select>
                 <select className="border p-2 rounded shadow-sm bg-black text-white" onChange={(e) => setFilters({ ...filters, status: e.target.value })}>
                     <option value="">All Statuses</option>
-                    {["Pending", "Interviewed", "Offered", "Rejected by Company", "Rejected by Me"].map(status => <option key={status}>{status}</option>)}
+                    {["Applied", "Pending", "Got Response", "Interviewed", "Offered", "Rejected by Company", "Rejected by Me", "Never heard back"].map(status => <option key={status}>{status}</option>)}
                 </select>
             </div>
 
